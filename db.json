@@ -1,0 +1,11 @@
+{
+  "clientes": [
+    {
+      "nomeCompleto": "João ",
+      "cpf": "123.456.789-00",
+      "email": "joaoalberto@email.com",
+      "telefone": "(79)99925-8778",
+      "id": 1
+    }
+  ]
+}

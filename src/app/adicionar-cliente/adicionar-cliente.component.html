@@ -1,0 +1,48 @@
+<div>
+    <h2>Adicione Clientes</h2>
+    <form [formGroup]="formulario" novalidate (ngSubmit)="adicionarCliente();">
+        <div class="form-group">
+            <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Nome Completo"
+                autocomplete="off"
+                formControlName="nomeCompleto"
+            >
+        </div>
+        <div class="form-group">
+            <input 
+                type="text" 
+                class="form-control" 
+                placeholder="CPF"
+                autocomplete="off"
+                formControlName="cpf"
+            >
+        </div>
+        <div class="form-group">
+            <input 
+                type="text" 
+                class="form-control" 
+                placeholder="E-mail"
+                autocomplete="off"
+                formControlName="email"
+            >
+        </div>
+        <div class="form-group">
+            <input 
+                type="text" 
+                class="form-control" 
+                placeholder="Telefone"
+                autocomplete="off"
+                formControlName="telefone"
+            >
+        </div>
+        <div class="form-group">
+            <button 
+                type="submit" 
+                class="btn btn-primary"
+                [disabled]="!formulario.valid"
+            >Adicionar</button>
+        </div>
+    </form>
+</div>

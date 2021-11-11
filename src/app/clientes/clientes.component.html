@@ -1,0 +1,25 @@
+<div>
+  <h2>Tabela de Clientes</h2>
+  <div class="table">
+    <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nome Completo</th>
+          <th>CPF</th>
+          <th>E-mail</th>
+          <th>Telefone</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let cliente of clientes">
+        <td>{{cliente.id}}</td>
+        <td>{{cliente.nomeCompleto}}</td>
+        <td>{{cliente.cpf}}</td>
+        <td>{{cliente.email}}</td>
+        <td>{{cliente.telefone}}</td>
+        <td><button type="button" class="btn btn-warning" (click)="atualizarClientePorId(cliente.id);">Atualizar</button></td>
+        <td><button type="button" class="btn btn-danger" (click)="removerCliente(cliente.id);">Deletar</button></td>
+      </tr>
+    </tbody>
+  </div>
+</div>
