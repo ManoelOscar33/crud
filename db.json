@@ -1,11 +1,25 @@
 {
   "clientes": [
     {
-      "nomeCompleto": "João ",
+      "nomeCompleto": "João Alvez",
       "cpf": "123.456.789-00",
       "email": "joaoalberto@email.com",
       "telefone": "(79)99925-8778",
       "id": 1
+    },
+    {
+      "nomeCompleto": "José Américo",
+      "cpf": "125.145.365-00",
+      "email": "joseamerico@email.com",
+      "telefone": "(79)99958-5445",
+      "id": 2
+    },
+    {
+      "nomeCompleto": "Helton Santos",
+      "cpf": "147.265.023-11",
+      "email": "heltonsantos@email.com",
+      "telefone": "(79)99958-2552",
+      "id": 3
     }
   ]
 }

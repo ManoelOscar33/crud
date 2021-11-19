@@ -59,25 +59,33 @@ export class AdicionarClienteComponent implements OnInit {
       this.clientesservice.atualizarClientePorId(this.formulario.value)
         .subscribe((res: any) => {
           console.log(res),
-          this.router.navigate(['alertmodal'])
+          this.router.navigate(['alertmodal']),
+          setTimeout(() => this.f(), 3000)
         },
         (erro: any) => { 
           console.log('Não foi possível atualizar as informações.Tente novamente.'),
-          this.router.navigate(['alertinsucesso'])
+          this.router.navigate(['alertinsucesso']),
+          setTimeout(() => this.f(), 5000)
         },
         () => console.log('Atualização completada com sucesso.'))
     } else {
       this.clientesservice.adicionarCliente(this.formulario.value)
         .subscribe((cliente: any) => {
-          this.router.navigate(['alertmodal'])
+          this.router.navigate(['alertmodal']),
+          setTimeout(() => this.f(), 5000)
           
         },
         (erro: any) => {
           console.log('Não foi possível adicionar dados com sucesso.Tente novamente.'),
-          this.router.navigate(['alertinsucesso'])
+          this.router.navigate(['alertinsucesso']),
+          setTimeout(() => this.f(), 5000)
         },
         () => console.log('Inclusão completada com sucesso.'))
     }
+  }
+
+  public f(): any {
+    return this.router.navigate(['clientes'])
   }
 
   
