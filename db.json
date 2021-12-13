@@ -1,7 +1,7 @@
 {
   "clientes": [
     {
-      "nomeCompleto": "João Alvez",
+      "nomeCompleto": "João Souza",
       "cpf": "123.456.789-00",
       "email": "joaoalberto@email.com",
       "telefone": "(79)99925-8778",
@@ -20,6 +20,41 @@
       "email": "heltonsantos@email.com",
       "telefone": "(79)99958-2552",
       "id": 3
+    },
+    {
+      "nomeCompleto": "José da Silva",
+      "cpf": "201.145.145-11",
+      "email": "jose@email.com",
+      "telefone": "(79)99985-4554",
+      "id": 4
+    },
+    {
+      "nomeCompleto": "Jorge Jesus de Almeida",
+      "cpf": "145.254.478-22",
+      "email": "jorgejesus@gmail.com",
+      "telefone": "(79)99958-7557",
+      "id": 5
+    },
+    {
+      "nomeCompleto": "Tiago Jesus Santos",
+      "cpf": "456.147.258-00",
+      "email": "tiago.jesus@email.com",
+      "telefone": "(21)98825-7887",
+      "id": 6
+    },
+    {
+      "nomeCompleto": "Gabriel Santos Silva",
+      "cpf": "147.258.369-11",
+      "email": "gabriel.santos@email.com",
+      "telefone": "(79)98825-0220",
+      "id": 7
+    },
+    {
+      "nomeCompleto": "Maria José",
+      "cpf": "254.147.456-11",
+      "email": "mariajose@gmail.com",
+      "telefone": "(11)99925-4556",
+      "id": 8
     }
   ]
 }

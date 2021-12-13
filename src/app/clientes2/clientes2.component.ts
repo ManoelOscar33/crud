@@ -1,14 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ClientesserviceService } from '../clientesservice.service';
 import { Cliente } from '../shared/cliente.model';
 
 @Component({
-  selector: 'app-clientes',
-  templateUrl: './clientes.component.html',
-  styleUrls: ['./clientes.component.css']
+  selector: 'app-clientes2',
+  templateUrl: './clientes2.component.html',
+  styleUrls: ['./clientes2.component.css']
 })
-export class ClientesComponent implements OnInit {
+export class Clientes2Component implements OnInit {
 
   clientes: Cliente[] = []
   cliente: any;
@@ -26,9 +26,9 @@ export class ClientesComponent implements OnInit {
     this.clientesService.obterClientes()
       .subscribe(
         (clientes: any) => {
-            let c: [] = clientes.slice(0, 4)
-            this.clientes = c
-          }
+          let c: [] = clientes.slice(4, 8)
+          this.clientes = c
+        }
       )
   }
 
@@ -54,4 +54,5 @@ export class ClientesComponent implements OnInit {
         },
         () => console.log('Remoção completada com sucesso.'))
   }
+
 }

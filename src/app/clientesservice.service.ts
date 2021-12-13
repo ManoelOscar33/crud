@@ -19,11 +19,11 @@ export class ClientesserviceService {
   }
 
   public adicionarCliente(cliente: Cliente): Observable<any> {
-    return this.http.post(`http://localhost:3000/clientes`, cliente)
+    return this.http.post<Cliente>(`http://localhost:3000/clientes`, cliente)
   }
 
   public atualizarClientePorId(cliente: Cliente): Observable<any> {
-    return this.http.put(`http://localhost:3000/clientes/${cliente.id}`, cliente)
+    return this.http.put<Cliente>(`http://localhost:3000/clientes/${cliente.id}`, cliente)
   }
 
   public removerCliente(id: any): Observable<any> {

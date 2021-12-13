@@ -13,6 +13,7 @@ import { AtualizarClienteComponent } from './atualizar-cliente/atualizar-cliente
 import { HomeComponent } from './home/home.component';
 import { AlertmodalComponent } from './alertmodal/alertmodal.component';
 import { AlertinsucessoComponent } from './alertinsucesso/alertinsucesso.component';
+import { Clientes2Component } from './clientes2/clientes2.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AlertinsucessoComponent } from './alertinsucesso/alertinsucesso.compone
     AtualizarClienteComponent,
     HomeComponent,
     AlertmodalComponent,
-    AlertinsucessoComponent
+    AlertinsucessoComponent,
+    Clientes2Component
   ],
   imports: [
     BrowserModule,
